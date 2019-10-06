@@ -1,26 +1,27 @@
-# Express Boilerplate!
+# Erosion API
 
-This is a boilerplate project used for starting new projects!
+API for Erosion
 
-## Set up
+https://erosion.porterhyphenborden.now.sh/
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## Endpoints
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+* /users
+* /tiles
+* /maps
+* /scores
+* /layouts
 
-## Scripts
+## Built with
 
-Start the application `npm start`
+* HTML
+* CSS
+* Javascript
+* Node.js
+* Express
+* ReactJS
+* PostgreSQL
 
-Start nodemon for the application `npm run dev`
+## Author
 
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+Callie Porter-Borden
