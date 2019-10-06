@@ -1,18 +1,8 @@
 const ScoresService = {
     getAllScores(knex) {
         return(knex)
-            .select(
-                's.id AS id',
-                's.map_id AS map',
-                's.final_score AS final_score',
-                's.score AS score',
-                's.soil_bonus AS soil_bonus',
-                's.location_bonus AS location_bonus',
-                's.date AS date',
-                'u.handle AS handle'
-            )
-            .from('scores AS s')
-            .join('users AS u', 's.user_id', 'u.id')
+            .select('*')
+            .from('scores')
             .orderBy('final_score', 'desc')
     },
     insertScore(knex, newScore) {

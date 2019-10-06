@@ -108,7 +108,7 @@ describe('Scores Endpoints', function() {
 
         it(`creates an score, responding with 201 and the new score`, () => {
             const newScore = {
-                user_id: null,
+                user_id: 1,
                 map_id: 3,
                 final_score: 4800,
                 score: 2000,
@@ -118,6 +118,7 @@ describe('Scores Endpoints', function() {
             }
             return supertest(app)
                 .post('/scores')
+                .set('Authorization', helpers.makeAuthHeader(testUsers[0]))
                 .send(newScore)
                 .expect(201)
                 .expect(res => {

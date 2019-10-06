@@ -15,8 +15,7 @@ const serializeScore = score => ({
     score: score.score,
     soil_bonus: score.soil_bonus,
     location_bonus: score.location_bonus,
-    date: new Date(score.date),
-    handle: xss(score.handle)
+    date: new Date(score.date)
 })
 
 scoresRouter
